@@ -1,1 +1,35 @@
+package com.company;
 
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in); // chinese
+        System.out.println("Enter grade of student :");
+        int grade = scanner.nextInt();
+
+        if ( grade < 55) {
+            System.out.println("failed");
+            grade = 0;
+            System.out.println( grade );
+        }
+
+        if (grade > 80 ) {
+            System.out.println("very good");
+            grade = 100;
+            System.out.println( grade );
+        }
+
+
+        // enter grade of student from user into int variable (lets call it grade)
+
+
+        // if grade < 55 print "failed"
+        //    now set grade to be zero
+        // if grade > 80 print "very good"
+        //    now set grade to be 100
+        // print the grade
+    }
+}
